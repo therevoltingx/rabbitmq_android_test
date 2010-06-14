@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<!-- BEGINE LOGIN STUFF -->
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+    <TableRow>
+        <TextView  
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:text="Hostname"
+            />
+        <EditText
+            android:id="@+id/hostname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    
+    <TableRow>
+        <TextView  
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:text="Username"
+            />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView  
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:text="Password"
+            />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView  
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:text="VHost"
+            />
+        <EditText
+            android:id="@+id/vhost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView  
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:text="Queue"
+            />
+        <EditText
+            android:id="@+id/queue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+</TableLayout>
+<Button android:id="@+id/start_tests" android:text="Start Tests" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

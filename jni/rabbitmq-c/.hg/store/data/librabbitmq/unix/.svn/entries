@@ -1,0 +1,54 @@
+8
+
+dir
+178
+svn+ssh://192.168.1.102/home/repo/trunk/solomon_android/jni/rabbitmq-c/.hg/store/data/librabbitmq/unix
+svn+ssh://192.168.1.102/home/repo
+
+
+
+2010-06-10T02:36:34.993297Z
+178
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+436e680d-8f03-499c-a6b8-e2d7b7840bdf
+
+socket.c.i
+file
+
+
+
+
+2010-06-11T00:30:59.000000Z
+a462a3932ac0294a41b04d39fcdfd966
+2010-06-10T02:36:34.993297Z
+178
+miguel
+has-props
+
+socket.h.i
+file
+
+
+
+
+2010-06-11T00:30:59.000000Z
+eed2f3508ad20239d26340f28e80321d
+2010-06-10T02:36:34.993297Z
+178
+miguel
+has-props
+
