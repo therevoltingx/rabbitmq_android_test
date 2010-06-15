@@ -1,0 +1,44 @@
+#rabbitmq_test: 
+    Test the rabbitmq client(s) to fine-tune consuming/publishing messages.
+
+#Requirements:
+    java SE 5+, ant: Included in operating system
+    android-sdk 1.5+: http://developer.android.com/sdk/index.html
+    android-ndk (optional): http://developer.android.com/sdk/ndk/index.html
+    eclipse + android development tools (optional): http://developer.android.com/guide/developing/eclipse-adt.html
+    
+#Setup:
+   Create a file in the rabbitmq_test directory called local.properties and add the following:
+   sdk.dir=/Users/miguelmorales/Downloads/android-sdk-mac_86
+   
+   Create another file called build.properties in the same directory and add:
+   sdk-location=/Users/miguelmorales/Downloads/android-sdk-mac_86
+   
+   Replace the paths to the path of the the android sdk directory.
+   
+#Compiling + Installing (Emulator/Device):
+    cd $(rabbitmq_test root dir) 
+    ant debug
+    /path/to/android-sdk/tools/adb install -l -r bin/rabbitmq_test-debug.apk
+
+#Compiling rabbitmq-c with Android NDK (librabbitmq-android.so):
+    #configure rabbitmq-c with a 0.8 amqp spec
+    cd ($rabbitmq_test)
+    cd jni/rabbitmq-c
+    autoreconf -i 
+    ./configure
+    
+    #build using android ndk...
+    cd ($rabbitmq_test)
+    /path/to/android-ndk/ndk-build -C jni
+    
+#Running:
+    Press the run button and watch the screen for the test's output.
+    Though to do anything useful, you'll have to read the log itself using:
+    adb -d locat
+    
+#Author:
+    Miguel Morales <therevoltingx@gmail.com>
+    
+#Thanks to:
+    RabbitMQ/Android/Linux/etc developers!
