@@ -32,11 +32,11 @@ public class EntryActivity extends Activity
         final EditText vhost_edittext = (EditText) findViewById(R.id.vhost);
         final EditText queuename_edittext = (EditText) findViewById(R.id.queue);
         
-        hostname_edittext.setText("diastrofunk.com");
-        username_edittext.setText("mytest");
-        password_edittext.setText("ZdPv5zS0eE0nDwoRLC1ljx04EJIJC16KyVu2");
+        hostname_edittext.setText("dev.rabbitmq.com");
+        username_edittext.setText("guest");
+        password_edittext.setText("guest");
         vhost_edittext.setText("/");
-        queuename_edittext.setText("18_area_queue");
+        queuename_edittext.setText("test");
         
         login_button.setOnClickListener(new View.OnClickListener() 
         {
